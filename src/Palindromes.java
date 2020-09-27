@@ -7,37 +7,24 @@ public class Palindromes {
         boolean keepPlaying = true;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the palindrome checker!");
-
-        /*for (int i = 0; i < 10; i++){
-
-            System.out.println("|");
-            System.out.println("\b");
-            System.out.println("/");
-            System.out.println("\b");
-            System.out.println("-");
-            System.out.println("\b");
-            System.out.println("\\");
-            System.out.println("\b");
-
-        }
-        System.out.println("hi");*/
+        System.out.println("Welcome to the palindrome checker!\n----------------------------------");
 
         while (keepPlaying) {
-            System.out.println("Enter a potential palindrome. Alternatively, type 'E' to exit.");
+            System.out.println("Enter a potential palindrome below. If you've had enough, type 'E' to exit.");
             String userInput = scanner.nextLine();
             userInput = userInput.toLowerCase();
             if (userInput.equals("e")){
                 keepPlaying = false;
+                break;
             }
-
-            
-
-
-
-
+            boolean result = Tools.isPalindrome(userInput);
+            if (result == true) {
+                System.out.println("That's a palindrome! Nice!\n");
+            }
+            else {
+                System.out.println("Sorry, that's not a palindrome!\n");
+            }
         }
-
-        System.out.println("we're done here");
+        System.out.println("Goodbye.");
     }
 }
