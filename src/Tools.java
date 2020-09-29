@@ -18,7 +18,7 @@ public class Tools {
 
     public static void printBox(String str) {
 
-        // amount of space between each side of the box, then making a string w/ that amount
+        // calculating amount of space between each side of the box, then making a string w/ that amount
         int spacesInt = str.length() - 2;
         String spaces = "";
         for (int i = 0; i < spacesInt; i++) {

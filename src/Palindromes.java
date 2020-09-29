@@ -7,7 +7,7 @@ public class Palindromes {
         boolean keepPlaying = true;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the palindrome checker!\n----------------------------------");
+        System.out.println("----------------------------------\nWelcome to the palindrome checker!\n----------------------------------");
 
         while (keepPlaying) {
             System.out.println("Enter a potential palindrome below. If you've had enough, type 'E' to exit.");
