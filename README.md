@@ -1,5 +1,5 @@
 # Overview
-This program traverses a string of any length (algorithm with O(N) space-time) and determines whether it's a palindrome or not. 
+This program traverses a string of any length and determines whether it's a palindrome or not (algorithm has O(N) space-time complexity). 
 If the user input is a palindrome, it asks the user if he/she would like to print it in a fancy
 box form.
 
